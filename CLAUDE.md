@@ -72,3 +72,36 @@ The variable $r$ represents the discount rate, and $t$ is the time period.
 - Renders correctly in most markdown viewers
 - Standard for academic and technical documentation
 - Supports complex mathematical notation
+
+## Japanese Text Formatting
+
+### Bold Text in Japanese
+
+**IMPORTANT**: When using bold formatting (`**text**`) with Japanese text, you MUST add spaces on both sides of the bold markers for proper rendering.
+
+**Incorrect** (will display literal `**` characters):
+```markdown
+これは**重要**です。
+```
+
+**Correct** (will render as bold):
+```markdown
+これは **重要** です。
+```
+
+This applies to all emphasis formatting in Japanese text:
+- Bold: `**text**` → `**テキスト**` (needs spaces)
+- Italic: `*text*` → `*テキスト*` (needs spaces)
+
+**Examples:**
+
+```markdown
+❌ **WACC**は、プロジェクトが超えるべきハードルレートです。
+✅ **WACC** は、プロジェクトが超えるべきハードルレートです。
+
+❌ これが**最も重要**な原則です。
+✅ これが **最も重要** な原則です。
+
+❌ 投資家は**年 11% のリターン**を要求します。
+✅ 投資家は **年 11% のリターン** を要求します。
+```
