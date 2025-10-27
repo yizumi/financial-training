@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"**/*.md\"",
-    "format:check": "prettier --check \"**/*.md\""
+    "format": "prettier --write \"src/**/*.md\" \"*.md\"",
+    "format:check": "prettier --check \"src/**/*.md\" \"*.md\""
   },
   "keywords": [],
   "author": "",

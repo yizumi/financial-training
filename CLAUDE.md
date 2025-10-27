@@ -9,6 +9,7 @@ This is a financial training project for software technology leaders within a Ma
 **Language**: All content should be written in Japanese (日本語) to serve the Japanese tech community
 
 **Key Principle**: Always use examples and scenarios that software engineers are familiar with:
+
 - Game development projects
 - SaaS businesses
 - Software development lifecycle decisions
@@ -23,6 +24,7 @@ Avoid traditional finance examples (manufacturing, retail, etc.) in favor of tec
 When discussing accounting and financial statements, use publicly traded Japanese tech companies as case studies:
 
 **Recommended Companies**:
+
 - **Money Forward** (マネーフォワード) - Fintech, SaaS
 - **freee** (フリー) - Cloud accounting SaaS
 - **DeNA** - Gaming, e-commerce
@@ -80,16 +82,19 @@ The variable $r$ represents the discount rate, and $t$ is the time period.
 **IMPORTANT**: When using bold formatting (`**text**`) with Japanese text, you MUST add spaces on both sides of the bold markers for proper rendering.
 
 **Incorrect** (will display literal `**` characters):
+
 ```markdown
 これは**重要**です。
 ```
 
 **Correct** (will render as bold):
+
 ```markdown
 これは **重要** です。
 ```
 
 This applies to all emphasis formatting in Japanese text:
+
 - Bold: `**text**` → `**テキスト**` (needs spaces)
 - Italic: `*text*` → `*テキスト*` (needs spaces)
 
