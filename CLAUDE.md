@@ -295,6 +295,41 @@ npm run format:check
 
 ## Git Conventions
 
+### Branch Workflow
+
+**CRITICAL: Never commit directly to the main branch.**
+
+**Always follow this workflow:**
+
+1. **Before starting work**, create a feature branch:
+   ```bash
+   git checkout -b feature/descriptive-name
+   # or
+   git checkout -b fix/descriptive-name
+   ```
+
+2. **Make your changes** and commit to the feature branch
+
+3. **Push the feature branch** to remote:
+   ```bash
+   git push -u origin feature/descriptive-name
+   ```
+
+4. **Create a Pull Request** from the feature branch to main
+
+**Branch naming conventions:**
+
+- `feature/*` - New content or features (e.g., `feature/chapter-4-financial-statements`)
+- `fix/*` - Bug fixes or corrections (e.g., `fix/chapter-2-typos`)
+- `docs/*` - Documentation updates (e.g., `docs/update-readme`)
+
+**Why this matters:**
+
+- Keeps main branch stable and reviewable
+- Allows for proper code review through PRs
+- Maintains clean git history
+- Enables easy rollback if needed
+
 ### Gitignore
 
 The following are gitignored:
