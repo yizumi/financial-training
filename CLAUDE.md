@@ -111,6 +111,24 @@ This applies to all emphasis formatting in Japanese text:
 ✅ 投資家は **年 11% のリターン** を要求します。
 ```
 
+### Inline Math in Japanese Text
+
+**IMPORTANT**: When using inline math (`$...$`) within Japanese text, you MUST add spaces on both sides of the dollar signs for proper rendering.
+
+**Incorrect** (will display literal `$` characters):
+
+```markdown
+負債の利息は税控除できるため、$(1 - T)$ を掛けます。
+```
+
+**Correct** (will render as math):
+
+```markdown
+負債の利息は税控除できるため、 $(1 - T)$ を掛けます。
+```
+
+This rule applies whenever inline math appears adjacent to Japanese characters (hiragana, katakana, kanji) or Japanese punctuation (、。).
+
 ## Project Structure and File Organization
 
 ### Directory Structure
@@ -162,7 +180,7 @@ Each chapter must follow this structure:
 
 1. [Key learning point 1]
 2. [Key learning point 2]
-...
+   ...
 
 ## 演習問題 | Practice Problems
 
@@ -186,10 +204,10 @@ Each chapter must follow this structure:
 **Right-align numeric columns** for better readability:
 
 ```markdown
-| 項目 | 金額 | 割合 |
-| :--- | ---: | ---: |
+| 項目 |  金額 | 割合 |
+| :--- | ----: | ---: |
 | 売上 | 1,000 | 100% |
-| 費用 | 800 | 80% |
+| 費用 |   800 |  80% |
 ```
 
 The `:---:` or `---:` syntax right-aligns the column.
@@ -302,6 +320,7 @@ npm run format:check
 **Always follow this workflow:**
 
 1. **Before starting work**, create a feature branch:
+
    ```bash
    git checkout -b feature/descriptive-name
    # or
@@ -311,6 +330,7 @@ npm run format:check
 2. **Make your changes** and commit to the feature branch
 
 3. **Push the feature branch** to remote:
+
    ```bash
    git push -u origin feature/descriptive-name
    ```
