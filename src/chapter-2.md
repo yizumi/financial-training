@@ -1,7 +1,5 @@
 # 2. 金利の構造とリスクプレミアム | The Structure of Interest Rates
 
-<div align="right">Yusuke Izumi, CFA 著</div>
-
 > **金利とは「お金のレンタル料」である。レンタル料がリスクに見合わなければ、お金は他へ逃げてしまう。**
 
 ## はじめに | Introduction
@@ -77,7 +75,7 @@ $$
 >
 > **Q2.** もしスタートアップが 5% しか提供しなかったら何が起こるか、述べよ。
 >
-> → 解答は [chapter-2-ans.md](./chapter-2-ans.md#example-1-スタートアップ-vs-国債への投資) を参照
+> → 解答は [chapter-2-case-answer.md](./chapter-2-case-answer.md#example-1-スタートアップ-vs-国債への投資) を参照
 
 ---
 
@@ -229,7 +227,7 @@ $$
 >
 > **Q2.** もし、あなたが「3% で貸してほしい」と銀行に交渉したら何が起こるか、述べよ。
 >
-> → 解答は [chapter-2-ans.md](./chapter-2-ans.md#example-2-スタートアップの資金調達が高金利な理由) を参照
+> → 解答は [chapter-2-case-answer.md](./chapter-2-case-answer.md#example-2-スタートアップの資金調達が高金利な理由) を参照
 
 ---
 
@@ -337,7 +335,7 @@ $$
 >
 > **Q2.** なぜ 2022 年にテック企業の株価が暴落したのか、金利環境の変化と関連付けて説明せよ。
 >
-> → 解答は [chapter-2-ans.md](./chapter-2-ans.md#example-3-fed-の金利引き上げがテック企業を直撃) を参照
+> → 解答は [chapter-2-case-answer.md](./chapter-2-case-answer.md#example-3-fed-の金利引き上げがテック企業を直撃) を参照
 
 ---
 
@@ -391,7 +389,7 @@ $$
 >
 > **Q2.** どちらも 3 年後に 1,000 万円を生み出すにもかかわらず、現在価値が異なる理由を説明せよ。
 >
-> → 解答は [chapter-2-ans.md](./chapter-2-ans.md#example-4-リスクによって現在価値が変わる) を参照
+> → 解答は [chapter-2-case-answer.md](./chapter-2-case-answer.md#example-4-リスクによって現在価値が変わる) を参照
 
 ---
 
@@ -411,7 +409,7 @@ $$
 >
 > **Q2.** 金利が 5% → 10% に上昇したときの資産価値の変化率を求めよ。また、この結果が 2022 年の FED 利上げ局面でテック株に起きたことをどう説明するか、述べよ。
 >
-> → 解答は [chapter-2-ans.md](./chapter-2-ans.md#example-5-金利上昇が資産価値を下げる) を参照
+> → 解答は [chapter-2-case-answer.md](./chapter-2-case-answer.md#example-5-金利上昇が資産価値を下げる) を参照
 
 ---
 
@@ -543,7 +541,7 @@ $$
 >
 > **Q2.** 負債で調達したほうが WACC が下がる理由を説明せよ。また、負債を増やし続ければ WACC は無制限に下げられるか、論じよ。
 >
-> → 解答は [chapter-2-ans.md](./chapter-2-ans.md#example-6-資本構成と-wacc-の関係) を参照
+> → 解答は [chapter-2-case-answer.md](./chapter-2-case-answer.md#example-6-資本構成と-wacc-の関係) を参照
 
 ---
 
@@ -608,7 +606,7 @@ $$
 >
 > **Q2.** WACC の変化が企業価値に与えるインパクトを踏まえ、どのような要因が企業価値を変動させるか、述べよ。
 >
-> → 解答は [chapter-2-ans.md](./chapter-2-ans.md#example-7-wacc-変化と企業価値) を参照
+> → 解答は [chapter-2-case-answer.md](./chapter-2-case-answer.md#example-7-wacc-変化と企業価値) を参照
 
 ---
 

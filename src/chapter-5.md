@@ -1,7 +1,5 @@
 # 5. 損益計算書 (P/L) の分析 | Analyzing the Income Statement
 
-<div align="right">Yusuke Izumi, CFA 著</div>
-
 > **コードがプロダクトの設計図なら、損益計算書はビジネスの設計図だ。**
 
 ## はじめに | Introduction

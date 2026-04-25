@@ -1,7 +1,5 @@
 # 6. 貸借対照表 (B/S) の分析 | Analyzing the Balance Sheet
 
-<div align="right">Yusuke Izumi, CFA 著</div>
-
 > **損益計算書が事業のパフォーマンスなら、貸借対照表は企業の骨格と体力だ。**
 
 ## はじめに | Introduction
