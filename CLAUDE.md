@@ -162,8 +162,6 @@ Each chapter must follow this structure:
 ```markdown
 # [Number]. [Title in Japanese] | [Title in English]
 
-<div align="right">Yusuke Izumi, CFA 著</div>
-
 > **Opening quote or key principle**
 
 ## はじめに | Introduction
@@ -189,14 +187,6 @@ Each chapter must follow this structure:
 ## 解答と解説 | Answers and Explanations
 
 [Detailed solutions]
-```
-
-### Author Attribution
-
-**Always right-align** the author name using HTML:
-
-```markdown
-<div align="right">Yusuke Izumi, CFA 著</div>
 ```
 
 ### Tables

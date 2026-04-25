@@ -1,7 +1,5 @@
 # 2. 金利の構造とリスクプレミアム — 例題解答 | Chapter 2 Examples: Answers
 
-<div align="right">Yusuke Izumi, CFA 著</div>
-
 > このファイルは [chapter-2.md](./chapter-2.md) の例題に対する解答集です。各設問は本編側に掲載されています。
 
 ---
