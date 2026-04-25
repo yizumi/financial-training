@@ -71,7 +71,7 @@ html { -webkit-text-size-adjust: 100%; font-size: 14px; }
 
 body {
   margin: 0;
-  padding: 3rem 1.25rem 5rem;
+  padding: 6rem 2.5rem 10rem;
   background: var(--bg);
   color: var(--fg);
   font-family: "Source Serif 4", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
@@ -210,7 +210,7 @@ tbody tr:nth-child(even) { background: rgba(0, 0, 0, 0.02); }
 
 @media (max-width: 640px) {
   html { font-size: 13px; }
-  body { padding: 1.5rem 1rem 3rem; }
+  body { padding: 3rem 2rem 6rem; }
   h1 { font-size: 1.7rem; }
   h2 { font-size: 1.35rem; }
 }
