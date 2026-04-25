@@ -6,12 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.md\" \"*.md\"",
-    "format:check": "prettier --check \"src/**/*.md\" \"*.md\""
+    "format:check": "prettier --check \"src/**/*.md\" \"*.md\"",
+    "build": "tsx scripts/md-to-html.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "prettier": "^3.6.2"
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^25.6.0",
+    "katex": "^0.16.45",
+    "markdown-it": "^14.1.1",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-texmath": "^1.0.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
   }
 }

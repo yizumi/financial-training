@@ -1,0 +1,103 @@
+name: Build and Release HTML
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "scripts/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/build-release.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-release
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Build HTML for every chapter in src/
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          for md in src/*.md; do
+            name=$(basename "$md" .md)
+            npm run build --silent -- "$md" "dist/${name}.html"
+          done
+          ls -la dist/
+
+      - name: Generate index.html
+        run: |
+          set -euo pipefail
+          {
+            echo '<!doctype html>'
+            echo '<html lang="ja"><head><meta charset="utf-8">'
+            echo '<meta name="viewport" content="width=device-width,initial-scale=1">'
+            echo '<title>Finance Training — Chapters</title>'
+            echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Source+Serif+4:wght@400;600&display=swap">'
+            echo '<style>'
+            echo 'html{font-size:14px}'
+            echo 'body{font-family:"Source Serif 4","Noto Serif JP",serif;max-width:680px;margin:3rem auto;padding:0 1rem;line-height:1.5;background:#fbfaf6;color:#1f1f1f}'
+            echo 'h1{border-bottom:1px solid #d8d3c4;padding-bottom:.4em;font-weight:700}'
+            echo 'ul{padding-left:1.2em;list-style:none}'
+            echo 'li{margin:.4em 0}'
+            echo 'a{color:#5a3a1f;text-decoration-thickness:1px;text-underline-offset:2px}'
+            echo 'a:hover{color:#884b1f}'
+            echo '.meta{color:#777;font-size:.9em;margin-top:2.5em;border-top:1px solid #e6e1d2;padding-top:.8em}'
+            echo '</style>'
+            echo '</head><body>'
+            echo '<h1>Finance Training</h1>'
+            echo '<ul>'
+            for f in $(ls dist/*.html | sort); do
+              base=$(basename "$f")
+              [ "$base" = "index.html" ] && continue
+              title=$(grep -m1 -oP '(?<=<title>).*?(?=</title>)' "$f" || echo "$base")
+              echo "<li><a href=\"${base}\">${title}</a></li>"
+            done
+            echo '</ul>'
+            echo "<p class=\"meta\">Built from <code>${GITHUB_SHA}</code> · run #${GITHUB_RUN_NUMBER}</p>"
+            echo '</body></html>'
+          } > dist/index.html
+
+      - name: Package zip
+        run: |
+          cd dist
+          zip -r ../finance-html.zip .
+
+      - name: Compute release metadata
+        id: meta
+        run: |
+          short_sha="${GITHUB_SHA:0:7}"
+          echo "short_sha=${short_sha}" >> "$GITHUB_OUTPUT"
+          echo "tag=release-${GITHUB_RUN_NUMBER}-${short_sha}" >> "$GITHUB_OUTPUT"
+          echo "name=Release #${GITHUB_RUN_NUMBER} (${short_sha})" >> "$GITHUB_OUTPUT"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: ${{ steps.meta.outputs.name }}
+          body: |
+            Rendered HTML from `${{ github.sha }}`.
+
+            - Per-chapter HTML files attached individually
+            - `finance-html.zip` contains all chapters plus an index page
+          files: |
+            dist/*.html
+            finance-html.zip
+          generate_release_notes: true
