@@ -162,8 +162,6 @@ Each chapter must follow this structure:
 ```markdown
 # [Number]. [Title in Japanese] | [Title in English]
 
-<div align="right">Yusuke Izumi, CFA 著</div>
-
 > **Opening quote or key principle**
 
 ## はじめに | Introduction
@@ -189,14 +187,6 @@ Each chapter must follow this structure:
 ## 解答と解説 | Answers and Explanations
 
 [Detailed solutions]
-```
-
-### Author Attribution
-
-**Always right-align** the author name using HTML:
-
-```markdown
-<div align="right">Yusuke Izumi, CFA 著</div>
 ```
 
 ### Tables
@@ -243,8 +233,6 @@ Use blockquotes with 📖 emoji for examples:
 - A. [Option A]
 - B. [Option B]
 - C. [Option C]
-
----
 ```
 
 **Important**: Use `- A. ` format (not `**A.**` or other formats) for consistency.
@@ -263,9 +251,11 @@ $$
 **解説：**
 
 [Detailed explanation...]
-
----
 ```
+
+### Horizontal Rules
+
+**Do not insert standalone `---` horizontal rules between sections, examples, or problems.** Section headings (`##`, `###`) provide enough visual separation; horizontal rules add noise in both the markdown source and the rendered HTML output. The only valid use of `---` in markdown files is inside table syntax (`| --- |`, `| :--- |`, `| ---: |`).
 
 ## Code Formatting
 
