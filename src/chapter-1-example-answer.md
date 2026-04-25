@@ -1,7 +1,5 @@
 # 1. お金の時間的価値 | Example 解答と解説
 
-<div align="right">Yusuke Izumi, CFA 著</div>
-
 Chapter 1 本文中の Example の解答と解説をまとめたものです。まずは本文の Example を読み、自分で考えてからこちらを参照してください。
 
 ---
