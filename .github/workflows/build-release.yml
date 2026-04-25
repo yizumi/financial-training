@@ -34,11 +34,7 @@ jobs:
       - name: Build HTML for every chapter in src/
         run: |
           set -euo pipefail
-          mkdir -p dist
-          for md in src/*.md; do
-            name=$(basename "$md" .md)
-            npm run build --silent -- "$md" "dist/${name}.html"
-          done
+          npm run build:all
           ls -la dist/
 
       - name: Generate index.html

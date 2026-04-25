@@ -249,16 +249,10 @@ ${body}
 `;
 }
 
-function main() {
-  const [, , inputPath, outputPath] = process.argv;
-  if (!inputPath || !outputPath) {
-    console.error("Usage: tsx scripts/md-to-html.ts <input.md> <output.html>");
-    process.exit(1);
-  }
-
+export function convert(inputPath: string, outputPath: string, md?: MarkdownIt): void {
   const markdown = readFileSync(inputPath, "utf8");
-  const md = buildMarkdown();
-  const body = md.render(markdown);
+  const renderer = md ?? buildMarkdown();
+  const body = renderer.render(markdown);
   const title = extractTitle(markdown, basename(inputPath, ".md"));
   const html = wrapHtml(title, body);
 
@@ -267,4 +261,16 @@ function main() {
   console.log(`Wrote ${outputPath} (${html.length.toLocaleString()} bytes)`);
 }
 
-main();
+export { buildMarkdown };
+
+function main() {
+  const [, , inputPath, outputPath] = process.argv;
+  if (!inputPath || !outputPath) {
+    console.error("Usage: tsx scripts/md-to-html.ts <input.md> <output.html>");
+    process.exit(1);
+  }
+  convert(inputPath, outputPath);
+}
+
+const isCli = process.argv[1] && import.meta.url === `file://${process.argv[1]}`;
+if (isCli) main();
