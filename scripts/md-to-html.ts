@@ -19,6 +19,20 @@ function buildMarkdown(): MarkdownIt {
 
   md.use(anchor, { permalink: false, slugify: (s: string) => s.trim().toLowerCase().replace(/\s+/g, "-").replace(/[^\p{L}\p{N}\-]/gu, "") });
   md.use(footnote);
+
+  const defaultLinkOpen = md.renderer.rules.link_open ?? ((tokens, idx, options, _env, self) => self.renderToken(tokens, idx, options));
+  md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+    const token = tokens[idx];
+    const hrefIndex = token.attrIndex("href");
+    if (hrefIndex >= 0) {
+      const href = token.attrs![hrefIndex][1];
+      if (/\.md(#.*)?$/.test(href)) {
+        token.attrs![hrefIndex][1] = href.replace(/\.md(#.*)?$/, (_m, hash) => `.html${hash ?? ""}`);
+      }
+    }
+    return defaultLinkOpen(tokens, idx, options, env, self);
+  };
+
   md.use(texmath, {
     engine: katex,
     delimiters: "dollars",
