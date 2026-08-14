@@ -67,38 +67,44 @@ _（注）単位は百万円。2025年11月期の有価証券報告書の数値�
 
 上の表を積み上げ棒グラフにすると、資産と負債・純資産が同じ高さ（同じ合計額）になることが視覚的にわかります。
 
-<svg viewBox="0 0 640 130" role="img" aria-labelledby="bs-chart-title bs-chart-desc" style="width:100%; height:auto; display:block; margin: 1.2em 0 0.4em;">
-  <title id="bs-chart-title">マネーフォワード連結貸借対照表の構成（2025年11月期、百万円）</title>
-  <desc id="bs-chart-desc">資産の内訳（現金及び預金、売上債権、有形固定資産、無形固定資産、その他資産）と、負債・純資産の内訳（純資産、固定負債、流動負債）を、それぞれ合計127,567百万円の積み上げ棒グラフで示す。両者の合計は一致する。</desc>
+<svg viewBox="0 0 340 335" role="img" aria-labelledby="bs1-title bs1-desc" style="width:100%; max-width:420px; height:auto; display:block; margin: 1.2em auto 0.4em;">
+  <title id="bs1-title">マネーフォワード連結貸借対照表の構成（2025年11月期、百万円、縦型積み上げ）</title>
+  <desc id="bs1-desc">資産の内訳（現金及び預金、売上債権、有形固定資産、無形固定資産、その他資産）と、負債・純資産の内訳（純資産、固定負債、流動負債）を、それぞれ合計127,567百万円の縦型積み上げ棒グラフで示す。色ではなく模様で区別しており、白黒印刷でも判別できる。両者の合計は一致する。</desc>
   <defs>
-    <clipPath id="bs-clip-1"><path d="M0,22 H636 A4,4 0 0 1 640,26 V46 A4,4 0 0 1 636,50 H0 Z" /></clipPath>
-    <clipPath id="bs-clip-2"><path d="M0,88 H636 A4,4 0 0 1 640,92 V112 A4,4 0 0 1 636,116 H0 Z" /></clipPath>
+    <pattern id="bs1-h45s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,8 L8,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs1-h45d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,4 L4,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs1-h135s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,0 L8,8" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs1-h135d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,0 L4,4" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs1-cross" patternUnits="userSpaceOnUse" width="6" height="6"><rect width="6" height="6" fill="#f5f2ea" /><path d="M0,6 L6,0 M0,0 L6,6" stroke="#3a362c" stroke-width="1.1" /></pattern>
+    <clipPath id="bs1-col1"><path d="M40,300 V24 A4,4 0 0 1 44,20 H136 A4,4 0 0 1 140,24 V300 Z" /></clipPath>
+    <clipPath id="bs1-col2"><path d="M200,300 V24 A4,4 0 0 1 204,20 H296 A4,4 0 0 1 300,24 V300 Z" /></clipPath>
   </defs>
-  <text x="0" y="13" font-size="14" fill="var(--fg)">資産　合計 127,567</text>
-  <g clip-path="url(#bs-clip-1)">
-    <rect x="0" y="22" width="204.5" height="28" fill="#2a78d6" />
-    <rect x="206.5" y="22" width="33.57" height="28" fill="#eb6834" />
-    <rect x="242.07" y="22" width="6.01" height="28" fill="#1baf7a" />
-    <rect x="250.08" y="22" width="132.6" height="28" fill="#eda100" />
-    <rect x="384.68" y="22" width="255.22" height="28" fill="#e87ba4" />
+  <line x1="20" y1="300" x2="320" y2="300" stroke="#3a362c" stroke-width="1" />
+  <g clip-path="url(#bs1-col1)">
+    <rect x="40" y="211.1" width="100" height="88.9" fill="#e4e0d4" />
+    <rect x="40" y="195.53" width="100" height="13.57" fill="url(#bs1-h45s)" />
+    <rect x="40" y="192.03" width="100" height="1.5" fill="url(#bs1-h135s)" />
+    <rect x="40" y="133.13" width="100" height="56.9" fill="#a8a394" />
+    <rect x="40" y="20" width="100" height="111.13" fill="url(#bs1-h45d)" />
   </g>
-  <text x="0" y="79" font-size="14" fill="var(--fg)">負債・純資産　合計 127,567</text>
-  <g clip-path="url(#bs-clip-2)">
-    <rect x="0" y="88" width="279.2" height="28" fill="#008300" />
-    <rect x="281.2" y="88" width="124.6" height="28" fill="#4a3aa7" />
-    <rect x="407.8" y="88" width="232.2" height="28" fill="#e34948" />
+  <g clip-path="url(#bs1-col2)">
+    <rect x="200" y="178.4" width="100" height="121.6" fill="#3a362c" />
+    <rect x="200" y="123.0" width="100" height="53.4" fill="url(#bs1-h135d)" />
+    <rect x="200" y="20" width="100" height="101.0" fill="url(#bs1-cross)" />
   </g>
+  <text x="90" y="316" font-size="14" fill="var(--fg)" text-anchor="middle">資産　127,567</text>
+  <text x="250" y="316" font-size="14" fill="var(--fg)" text-anchor="middle">負債・純資産　127,567</text>
 </svg>
 
 <div style="display:flex; flex-wrap:wrap; gap: 0.4em 1.4em; font-size: 0.85em; color: var(--fg-muted); margin: 0 0 1.6em;">
-  <span><span style="display:inline-block;width:10px;height:10px;background:#2a78d6;border-radius:2px;margin-right:0.4em;"></span>現金及び預金 40,973</span>
-  <span><span style="display:inline-block;width:10px;height:10px;background:#eb6834;border-radius:2px;margin-right:0.4em;"></span>売上債権 7,092</span>
-  <span><span style="display:inline-block;width:10px;height:10px;background:#1baf7a;border-radius:2px;margin-right:0.4em;"></span>有形固定資産 1,596</span>
-  <span><span style="display:inline-block;width:10px;height:10px;background:#eda100;border-radius:2px;margin-right:0.4em;"></span>無形固定資産 26,835</span>
-  <span><span style="display:inline-block;width:10px;height:10px;background:#e87ba4;border-radius:2px;margin-right:0.4em;"></span>その他資産 51,071</span>
-  <span><span style="display:inline-block;width:10px;height:10px;background:#008300;border-radius:2px;margin-right:0.4em;"></span>純資産 55,865</span>
-  <span><span style="display:inline-block;width:10px;height:10px;background:#4a3aa7;border-radius:2px;margin-right:0.4em;"></span>固定負債 25,234</span>
-  <span><span style="display:inline-block;width:10px;height:10px;background:#e34948;border-radius:2px;margin-right:0.4em;"></span>流動負債 46,468</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background:#e4e0d4;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>現金及び預金 40,973</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>売上債権 7,092</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>有形固定資産 1,596</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background:#a8a394;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>無形固定資産 26,835</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>その他資産 51,071</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background:#3a362c;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>純資産 55,865</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>固定負債 25,234</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1px, transparent 1px 6px), repeating-linear-gradient(135deg, #3a362c 0 1px, transparent 1px 6px);background-color:#f5f2ea;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>流動負債 46,468</span>
 </div>
 
 マネーフォワードは潤沢な現金を持ち、資産の多くをソフトウェアやのれんといった無形資産が占めています。そして、その原資の多くは株主からの出資（純資産）です。
@@ -122,7 +128,7 @@ _（注）単位は百万円。2025年11月期の有価証券報告書の数値�
   土地、建物、サーバー機器など。メーカーに比べ、テック企業の B/S ではこの割合は小さい傾向にあります。
 - **無形固定資産 (Intangible Assets)**
   物理的な形のない資産で、テック企業の価値の源泉です。
-  - **ソフトウェア**: エンジニアが開発したコードそのものです。会計ルール上、一定の要件を満たした開発費は資産として計上され、マネーフォワードでは計上済みのソフトウェアと開発中の仮勘定を合わせて約 177 億円にのぼります。過去の開発投資が、そのまま B/S 上の資産として積み上がっている形です。
+  - **ソフトウェア**: エンジニアが開発したコードそのものです。会計ルール上、仕様が固まり将来の収益獲得や費用削減に確実につながると見込める段階以降の開発費は資産として計上され（それ以前の研究・企画段階の費用は費用処理）、マネーフォワードでは計上済みのソフトウェアと開発中の仮勘定を合わせて約 177 億円にのぼります。過去の開発投資が、そのまま B/S 上の資産として積み上がっている形です。
   - **のれん (Goodwill)**: M&A（企業の買収）の際に発生します。買収した企業の純資産額を上回って支払った、ブランド価値や技術力などの超過分です。マネーフォワードには約 67 億円ののれんが計上されており、積極的な M&A の歴史がここに表れています。
 
 > **📖 Example: マネーフォワード vs freee**
@@ -140,6 +146,8 @@ _（注）単位は百万円。2025年11月期の有価証券報告書の数値�
 > どちらの B/S にもソフトウエアという無形固定資産が計上されています。エンジニアが積み上げてきた自社開発の資産が財産として認識されている、という点は共通です。
 >
 > はっきり差が出るのはのれんです。マネーフォワードののれん（67.3 億円）は freee（5.9 億円）の 11 倍以上あります。M&A で事業領域を広げてきたマネーフォワードと、自社開発中心で成長してきた freee の違いが、そのまま数字に表れています。freee の資産の 68% が現金という構成も、買収より自前主義でやってきた会社らしいところです。同じ会計 SaaS でも、成長戦略の違いは B/S の資産構成にはっきり表れます。
+>
+> なお freee は、前期（2024 年 6 月期）の連結貸借対照表ではのれん・ソフトウエアともに計上額がゼロでした。当期になって初めて金額が計上された背景には会計処理上の事情がありますが、ややテクニカルな話になるためここでは深入りしません。
 
 ## 6.3. 負債と純資産の部：どうやって資金を調達したか
 
@@ -159,6 +167,42 @@ B/S の右側は、資産を構築するための資金の出所（誰のお金�
 > 大半を占めているのは預り金です。2,172.7 億円と、資産合計の 40%、負債合計の約 49% にのぼります。メルカリでの売上金のうちユーザーがまだ引き出していない残高や、メルペイ（資金決済業）のユーザー残高など、一時的に預かっているお金です。
 >
 > 預り金はいつかユーザーに返す義務のあるお金なので負債には違いありませんが、銀行からの借金とは性質が異なり、利息を払う必要もありません。フリマアプリという事業に決済業・資金移動業という機能が組み込まれているからこそ現れる負債項目で、負債の中身を見れば、その会社が実際に何を担っているかが見えてきます。
+
+この構成を縦型の積み上げグラフにすると、預り金の大きさが視覚的にも際立ちます。
+
+<svg viewBox="0 0 340 335" role="img" aria-labelledby="bs2-title bs2-desc" style="width:100%; max-width:420px; height:auto; display:block; margin: 1.2em auto 0.4em;">
+  <title id="bs2-title">メルカリ連結財政状態計算書の構成（2025年6月期、百万円、縦型積み上げ）</title>
+  <desc id="bs2-desc">資産の内訳（現金及び現金同等物、営業債権及びその他の債権、その他資産）と、負債・純資産の内訳（資本合計、その他負債、預り金）を、それぞれ合計543,763百万円の縦型積み上げ棒グラフで示す。色ではなく模様で区別しており、白黒印刷でも判別できる。両者の合計は一致する。</desc>
+  <defs>
+    <pattern id="bs2-h45s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,8 L8,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs2-h135s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,0 L8,8" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs2-h135d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,0 L4,4" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <clipPath id="bs2-col1"><path d="M40,300 V24 A4,4 0 0 1 44,20 H136 A4,4 0 0 1 140,24 V300 Z" /></clipPath>
+    <clipPath id="bs2-col2"><path d="M200,300 V24 A4,4 0 0 1 204,20 H296 A4,4 0 0 1 300,24 V300 Z" /></clipPath>
+  </defs>
+  <line x1="20" y1="300" x2="320" y2="300" stroke="#3a362c" stroke-width="1" />
+  <g clip-path="url(#bs2-col1)">
+    <rect x="40" y="225.3" width="100" height="74.7" fill="#e4e0d4" />
+    <rect x="40" y="94.1" width="100" height="129.2" fill="#a8a394" />
+    <rect x="40" y="20" width="100" height="72.1" fill="url(#bs2-h45s)" />
+  </g>
+  <g clip-path="url(#bs2-col2)">
+    <rect x="200" y="249.7" width="100" height="50.3" fill="url(#bs2-h135s)" />
+    <rect x="200" y="132.9" width="100" height="114.8" fill="url(#bs2-h135d)" />
+    <rect x="200" y="20" width="100" height="110.9" fill="#3a362c" />
+  </g>
+  <text x="90" y="316" font-size="14" fill="var(--fg)" text-anchor="middle">資産　543,763</text>
+  <text x="250" y="316" font-size="14" fill="var(--fg)" text-anchor="middle">負債・純資産　543,763</text>
+</svg>
+
+<div style="display:flex; flex-wrap:wrap; gap: 0.4em 1.4em; font-size: 0.85em; color: var(--fg-muted); margin: 0 0 1.6em;">
+  <span><span style="display:inline-block;width:14px;height:14px;background:#e4e0d4;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>現金及び現金同等物 147,028</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background:#a8a394;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>営業債権及びその他の債権 254,728</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>その他資産 142,007</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>資本合計 99,640</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>その他負債 226,854</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background:#3a362c;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>預り金 217,268</span>
+</div>
 
 ### 純資産 (Equity) - 自己資本
 
@@ -216,7 +260,7 @@ B/S の数字を使うことで、企業の財務的な体力や安全性を測�
 
 1.  **貸借対照表 (B/S) は企業の財政スナップショット**：特定時点での資産、負債、純資産の残高を示す。
 2.  **`資産 = 負債 + 純資産` が絶対ルール**：左側（資産）で資金の使い道、右側（負債・純資産）で資金の調達源がわかる。
-3.  **テック企業の資産は無形資産が主役**：エンジニアが生み出すソフトウェアは、B/S 上で重要な資産として計上される。
+3.  **固定資産では無形資産が存在感を持つ**：エンジニアが生み出すソフトウェアやM&Aによるのれんは、テック企業の固定資産の中核になり得る。ただし資産全体に占める比率は会社によって大きく異なり、freeeのように現金が資産の大半を占め、ソフトウェア資産自体はわずか（一時期は計上額ゼロ）という会社もある。
 4.  **純資産は企業の体力源**：株主からの出資金（資本剰余金）と利益の蓄積（利益剰余金）から成る。成長企業では、先行投資により利益剰余金がマイナスになることもある。
 5.  **自己資本比率は安全性のバロメーター**：`純資産 / 総資産` で計算され、企業の長期的な支払い能力を示す。
 6.  **負債は借金だけではない**：預り金のように、事業モデル特有の項目が負債として計上されることがある（例：メルカリ）。負債の中身を見れば、その会社が実際に担っている機能が見えてくる。
