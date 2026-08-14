@@ -68,8 +68,8 @@ _（注）単位は百万円。2025年11月期の有価証券報告書の数値�
 上の表を積み上げ棒グラフにすると、資産と負債・純資産が同じ高さ（同じ合計額）になることが視覚的にわかります。
 
 <div style="display:flex; flex-wrap:wrap; gap: 1.6em; margin: 1.2em 0 1.6em;">
-<div style="flex:1 1 220px; min-width:200px;">
-<svg viewBox="0 0 220 360" role="img" aria-labelledby="bs1a-title bs1a-desc" style="width:100%; max-width:260px; height:auto; display:block; margin: 0 auto;">
+<div style="flex:1 1 240px; min-width:220px;">
+<svg viewBox="0 0 260 550" role="img" aria-labelledby="bs1a-title bs1a-desc" style="width:100%; max-width:280px; height:auto; display:block; margin: 0 auto;">
   <title id="bs1a-title">マネーフォワード：資産の構成（2025年11月期、百万円）</title>
   <desc id="bs1a-desc">現金及び預金32.1%、売上債権5.6%、有形固定資産1.3%、無形固定資産21.0%、その他資産40.0%からなる、合計127,567百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
   <defs>
@@ -90,17 +90,25 @@ _（注）単位は百万円。2025年11月期の有価証券報告書の数値�
   <text x="110" y="185.75" font-size="13" fill="#2a2a2a" text-anchor="middle">21.0%</text>
   <text x="110" y="87.55" font-size="13" fill="#2a2a2a" text-anchor="middle">40.0%</text>
   <text x="110" y="356" font-size="14" fill="var(--fg)" text-anchor="middle">資産　127,567</text>
+  <rect x="20" y="371" width="11" height="11" fill="#e4e0d4" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="380" font-size="11" fill="var(--fg)">現金及び預金</text>
+  <text x="36" y="394" font-size="11" fill="var(--fg-muted)">40,973（32.1%）</text>
+  <rect x="20" y="405" width="11" height="11" fill="url(#bs1a-h45s)" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="414" font-size="11" fill="var(--fg)">売上債権</text>
+  <text x="36" y="428" font-size="11" fill="var(--fg-muted)">7,092（5.6%）</text>
+  <rect x="20" y="439" width="11" height="11" fill="url(#bs1a-h135s)" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="448" font-size="11" fill="var(--fg)">有形固定資産</text>
+  <text x="36" y="462" font-size="11" fill="var(--fg-muted)">1,596（1.3%）</text>
+  <rect x="20" y="473" width="11" height="11" fill="#a8a394" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="482" font-size="11" fill="var(--fg)">無形固定資産</text>
+  <text x="36" y="496" font-size="11" fill="var(--fg-muted)">26,835（21.0%）</text>
+  <rect x="20" y="507" width="11" height="11" fill="url(#bs1a-h45d)" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="516" font-size="11" fill="var(--fg)">その他資産</text>
+  <text x="36" y="530" font-size="11" fill="var(--fg-muted)">51,071（40.0%）</text>
 </svg>
-<div style="font-size: 0.85em; color: var(--fg-muted); margin-top: 0.6em;">
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#e4e0d4;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>現金及び預金　40,973（32.1%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>売上債権　7,092（5.6%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>有形固定資産　1,596（1.3%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#a8a394;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>無形固定資産　26,835（21.0%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>その他資産　51,071（40.0%）</div>
 </div>
-</div>
-<div style="flex:1 1 220px; min-width:200px;">
-<svg viewBox="0 0 220 360" role="img" aria-labelledby="bs1l-title bs1l-desc" style="width:100%; max-width:260px; height:auto; display:block; margin: 0 auto;">
+<div style="flex:1 1 240px; min-width:220px;">
+<svg viewBox="0 0 260 480" role="img" aria-labelledby="bs1l-title bs1l-desc" style="width:100%; max-width:280px; height:auto; display:block; margin: 0 auto;">
   <title id="bs1l-title">マネーフォワード：負債・純資産の構成（2025年11月期、百万円）</title>
   <desc id="bs1l-desc">純資産43.8%、固定負債19.8%、流動負債36.4%からなる、合計127,567百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
   <defs>
@@ -118,12 +126,16 @@ _（注）単位は百万円。2025年11月期の有価証券報告書の数値�
   <text x="110" y="172.25" font-size="13" fill="#2a2a2a" text-anchor="middle">19.8%</text>
   <text x="110" y="81.8" font-size="13" fill="#2a2a2a" text-anchor="middle">36.4%</text>
   <text x="110" y="356" font-size="14" fill="var(--fg)" text-anchor="middle">負債・純資産　127,567</text>
+  <rect x="20" y="371" width="11" height="11" fill="#3a362c" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="380" font-size="11" fill="var(--fg)">純資産</text>
+  <text x="36" y="394" font-size="11" fill="var(--fg-muted)">55,865（43.8%）</text>
+  <rect x="20" y="405" width="11" height="11" fill="url(#bs1l-h135d)" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="414" font-size="11" fill="var(--fg)">固定負債</text>
+  <text x="36" y="428" font-size="11" fill="var(--fg-muted)">25,234（19.8%）</text>
+  <rect x="20" y="439" width="11" height="11" fill="url(#bs1l-cross)" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="448" font-size="11" fill="var(--fg)">流動負債</text>
+  <text x="36" y="462" font-size="11" fill="var(--fg-muted)">46,468（36.4%）</text>
 </svg>
-<div style="font-size: 0.85em; color: var(--fg-muted); margin-top: 0.6em;">
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#3a362c;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>純資産　55,865（43.8%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>固定負債　25,234（19.8%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1px, transparent 1px 6px), repeating-linear-gradient(135deg, #3a362c 0 1px, transparent 1px 6px);background-color:#f5f2ea;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>流動負債　46,468（36.4%）</div>
-</div>
 </div>
 </div>
 
@@ -191,8 +203,8 @@ B/S の右側は、資産を構築するための資金の出所（誰のお金�
 この構成を縦型の積み上げグラフにすると、預り金の大きさが視覚的にも際立ちます。
 
 <div style="display:flex; flex-wrap:wrap; gap: 1.6em; margin: 1.2em 0 1.6em;">
-<div style="flex:1 1 220px; min-width:200px;">
-<svg viewBox="0 0 220 360" role="img" aria-labelledby="bs2a-title bs2a-desc" style="width:100%; max-width:260px; height:auto; display:block; margin: 0 auto;">
+<div style="flex:1 1 240px; min-width:220px;">
+<svg viewBox="0 0 260 480" role="img" aria-labelledby="bs2a-title bs2a-desc" style="width:100%; max-width:280px; height:auto; display:block; margin: 0 auto;">
   <title id="bs2a-title">メルカリ：資産の構成（2025年6月期、百万円）</title>
   <desc id="bs2a-desc">現金及び現金同等物27.0%、営業債権及びその他の債権46.9%、その他資産26.1%からなる、合計543,763百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
   <defs>
@@ -209,15 +221,19 @@ B/S の右側は、資産を構築するための資金の出所（誰のお金�
   <text x="110" y="182.05" font-size="13" fill="#2a2a2a" text-anchor="middle">46.9%</text>
   <text x="110" y="64.8" font-size="13" fill="#2a2a2a" text-anchor="middle">26.1%</text>
   <text x="110" y="356" font-size="14" fill="var(--fg)" text-anchor="middle">資産　543,763</text>
+  <rect x="20" y="371" width="11" height="11" fill="#e4e0d4" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="380" font-size="11" fill="var(--fg)">現金及び現金同等物</text>
+  <text x="36" y="394" font-size="11" fill="var(--fg-muted)">147,028（27.0%）</text>
+  <rect x="20" y="405" width="11" height="11" fill="#a8a394" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="414" font-size="11" fill="var(--fg)">営業債権及びその他の債権</text>
+  <text x="36" y="428" font-size="11" fill="var(--fg-muted)">254,728（46.9%）</text>
+  <rect x="20" y="439" width="11" height="11" fill="url(#bs2a-h45s)" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="448" font-size="11" fill="var(--fg)">その他資産</text>
+  <text x="36" y="462" font-size="11" fill="var(--fg-muted)">142,007（26.1%）</text>
 </svg>
-<div style="font-size: 0.85em; color: var(--fg-muted); margin-top: 0.6em;">
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#e4e0d4;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>現金及び現金同等物　147,028（27.0%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#a8a394;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>営業債権及びその他の債権　254,728（46.9%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>その他資産　142,007（26.1%）</div>
 </div>
-</div>
-<div style="flex:1 1 220px; min-width:200px;">
-<svg viewBox="0 0 220 360" role="img" aria-labelledby="bs2l-title bs2l-desc" style="width:100%; max-width:260px; height:auto; display:block; margin: 0 auto;">
+<div style="flex:1 1 240px; min-width:220px;">
+<svg viewBox="0 0 260 480" role="img" aria-labelledby="bs2l-title bs2l-desc" style="width:100%; max-width:280px; height:auto; display:block; margin: 0 auto;">
   <title id="bs2l-title">メルカリ：負債・純資産の構成（2025年6月期、百万円）</title>
   <desc id="bs2l-desc">資本合計18.3%、その他負債41.7%、預り金40.0%からなる、合計543,763百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
   <defs>
@@ -235,12 +251,16 @@ B/S の右側は、資産を構築するための資金の出所（誰のお金�
   <text x="110" y="218.65" font-size="13" fill="#2a2a2a" text-anchor="middle">41.7%</text>
   <text x="110" y="87.45" font-size="13" fill="#f5f2ea" text-anchor="middle">40.0%</text>
   <text x="110" y="356" font-size="14" fill="var(--fg)" text-anchor="middle">負債・純資産　543,763</text>
+  <rect x="20" y="371" width="11" height="11" fill="url(#bs2l-h135s)" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="380" font-size="11" fill="var(--fg)">資本合計</text>
+  <text x="36" y="394" font-size="11" fill="var(--fg-muted)">99,640（18.3%）</text>
+  <rect x="20" y="405" width="11" height="11" fill="url(#bs2l-h135d)" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="414" font-size="11" fill="var(--fg)">その他負債</text>
+  <text x="36" y="428" font-size="11" fill="var(--fg-muted)">226,854（41.7%）</text>
+  <rect x="20" y="439" width="11" height="11" fill="#3a362c" stroke="#3a362c" stroke-width="0.75" />
+  <text x="36" y="448" font-size="11" fill="var(--fg)">預り金</text>
+  <text x="36" y="462" font-size="11" fill="var(--fg-muted)">217,268（40.0%）</text>
 </svg>
-<div style="font-size: 0.85em; color: var(--fg-muted); margin-top: 0.6em;">
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>資本合計　99,640（18.3%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>その他負債　226,854（41.7%）</div>
-<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#3a362c;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>預り金　217,268（40.0%）</div>
-</div>
 </div>
 </div>
 
