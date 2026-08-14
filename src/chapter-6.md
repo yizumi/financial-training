@@ -67,44 +67,64 @@ _（注）単位は百万円。2025年11月期の有価証券報告書の数値�
 
 上の表を積み上げ棒グラフにすると、資産と負債・純資産が同じ高さ（同じ合計額）になることが視覚的にわかります。
 
-<svg viewBox="0 0 340 335" role="img" aria-labelledby="bs1-title bs1-desc" style="width:100%; max-width:420px; height:auto; display:block; margin: 1.2em auto 0.4em;">
-  <title id="bs1-title">マネーフォワード連結貸借対照表の構成（2025年11月期、百万円、縦型積み上げ）</title>
-  <desc id="bs1-desc">資産の内訳（現金及び預金、売上債権、有形固定資産、無形固定資産、その他資産）と、負債・純資産の内訳（純資産、固定負債、流動負債）を、それぞれ合計127,567百万円の縦型積み上げ棒グラフで示す。色ではなく模様で区別しており、白黒印刷でも判別できる。両者の合計は一致する。</desc>
+<div style="display:flex; flex-wrap:wrap; gap: 1.6em; margin: 1.2em 0 1.6em;">
+<div style="flex:1 1 220px; min-width:200px;">
+<svg viewBox="0 0 220 360" role="img" aria-labelledby="bs1a-title bs1a-desc" style="width:100%; max-width:260px; height:auto; display:block; margin: 0 auto;">
+  <title id="bs1a-title">マネーフォワード：資産の構成（2025年11月期、百万円）</title>
+  <desc id="bs1a-desc">現金及び預金32.1%、売上債権5.6%、有形固定資産1.3%、無形固定資産21.0%、その他資産40.0%からなる、合計127,567百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
   <defs>
-    <pattern id="bs1-h45s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,8 L8,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
-    <pattern id="bs1-h45d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,4 L4,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
-    <pattern id="bs1-h135s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,0 L8,8" stroke="#3a362c" stroke-width="1.2" /></pattern>
-    <pattern id="bs1-h135d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,0 L4,4" stroke="#3a362c" stroke-width="1.2" /></pattern>
-    <pattern id="bs1-cross" patternUnits="userSpaceOnUse" width="6" height="6"><rect width="6" height="6" fill="#f5f2ea" /><path d="M0,6 L6,0 M0,0 L6,6" stroke="#3a362c" stroke-width="1.1" /></pattern>
-    <clipPath id="bs1-col1"><path d="M40,300 V24 A4,4 0 0 1 44,20 H136 A4,4 0 0 1 140,24 V300 Z" /></clipPath>
-    <clipPath id="bs1-col2"><path d="M200,300 V24 A4,4 0 0 1 204,20 H296 A4,4 0 0 1 300,24 V300 Z" /></clipPath>
+    <pattern id="bs1a-h45s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,8 L8,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs1a-h135s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,0 L8,8" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs1a-h45d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,4 L4,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <clipPath id="bs1a-col"><path d="M40,340 V24 A4,4 0 0 1 44,20 H176 A4,4 0 0 1 180,24 V340 Z" /></clipPath>
   </defs>
-  <line x1="20" y1="300" x2="320" y2="300" stroke="#3a362c" stroke-width="1" />
-  <g clip-path="url(#bs1-col1)">
-    <rect x="40" y="211.1" width="100" height="88.9" fill="#e4e0d4" />
-    <rect x="40" y="195.53" width="100" height="13.57" fill="url(#bs1-h45s)" />
-    <rect x="40" y="192.03" width="100" height="1.5" fill="url(#bs1-h135s)" />
-    <rect x="40" y="133.13" width="100" height="56.9" fill="#a8a394" />
-    <rect x="40" y="20" width="100" height="111.13" fill="url(#bs1-h45d)" />
+  <line x1="20" y1="340" x2="200" y2="340" stroke="#3a362c" stroke-width="1" />
+  <g clip-path="url(#bs1a-col)">
+    <rect x="40" y="238.2" width="140" height="101.8" fill="#e4e0d4" />
+    <rect x="40" y="220.41" width="140" height="15.79" fill="url(#bs1a-h45s)" />
+    <rect x="40" y="216.41" width="140" height="2.0" fill="url(#bs1a-h135s)" />
+    <rect x="40" y="149.09" width="140" height="65.32" fill="#a8a394" />
+    <rect x="40" y="20" width="140" height="127.09" fill="url(#bs1a-h45d)" />
   </g>
-  <g clip-path="url(#bs1-col2)">
-    <rect x="200" y="178.4" width="100" height="121.6" fill="#3a362c" />
-    <rect x="200" y="123.0" width="100" height="53.4" fill="url(#bs1-h135d)" />
-    <rect x="200" y="20" width="100" height="101.0" fill="url(#bs1-cross)" />
-  </g>
-  <text x="90" y="316" font-size="14" fill="var(--fg)" text-anchor="middle">資産　127,567</text>
-  <text x="250" y="316" font-size="14" fill="var(--fg)" text-anchor="middle">負債・純資産　127,567</text>
+  <text x="110" y="293" font-size="13" fill="#2a2a2a" text-anchor="middle">32.1%</text>
+  <text x="110" y="185.75" font-size="13" fill="#2a2a2a" text-anchor="middle">21.0%</text>
+  <text x="110" y="87.55" font-size="13" fill="#2a2a2a" text-anchor="middle">40.0%</text>
+  <text x="110" y="356" font-size="14" fill="var(--fg)" text-anchor="middle">資産　127,567</text>
 </svg>
-
-<div style="display:flex; flex-wrap:wrap; gap: 0.4em 1.4em; font-size: 0.85em; color: var(--fg-muted); margin: 0 0 1.6em;">
-  <span><span style="display:inline-block;width:14px;height:14px;background:#e4e0d4;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>現金及び預金 40,973</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>売上債権 7,092</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>有形固定資産 1,596</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background:#a8a394;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>無形固定資産 26,835</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>その他資産 51,071</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background:#3a362c;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>純資産 55,865</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>固定負債 25,234</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1px, transparent 1px 6px), repeating-linear-gradient(135deg, #3a362c 0 1px, transparent 1px 6px);background-color:#f5f2ea;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>流動負債 46,468</span>
+<div style="font-size: 0.85em; color: var(--fg-muted); margin-top: 0.6em;">
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#e4e0d4;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>現金及び預金　40,973（32.1%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>売上債権　7,092（5.6%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>有形固定資産　1,596（1.3%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#a8a394;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>無形固定資産　26,835（21.0%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>その他資産　51,071（40.0%）</div>
+</div>
+</div>
+<div style="flex:1 1 220px; min-width:200px;">
+<svg viewBox="0 0 220 360" role="img" aria-labelledby="bs1l-title bs1l-desc" style="width:100%; max-width:260px; height:auto; display:block; margin: 0 auto;">
+  <title id="bs1l-title">マネーフォワード：負債・純資産の構成（2025年11月期、百万円）</title>
+  <desc id="bs1l-desc">純資産43.8%、固定負債19.8%、流動負債36.4%からなる、合計127,567百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
+  <defs>
+    <pattern id="bs1l-h135d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,0 L4,4" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs1l-cross" patternUnits="userSpaceOnUse" width="6" height="6"><rect width="6" height="6" fill="#f5f2ea" /><path d="M0,6 L6,0 M0,0 L6,6" stroke="#3a362c" stroke-width="1.1" /></pattern>
+    <clipPath id="bs1l-col"><path d="M40,340 V24 A4,4 0 0 1 44,20 H176 A4,4 0 0 1 180,24 V340 Z" /></clipPath>
+  </defs>
+  <line x1="20" y1="340" x2="200" y2="340" stroke="#3a362c" stroke-width="1" />
+  <g clip-path="url(#bs1l-col)">
+    <rect x="40" y="200.9" width="140" height="139.1" fill="#3a362c" />
+    <rect x="40" y="137.59" width="140" height="61.31" fill="url(#bs1l-h135d)" />
+    <rect x="40" y="20" width="140" height="115.59" fill="url(#bs1l-cross)" />
+  </g>
+  <text x="110" y="274.45" font-size="13" fill="#f5f2ea" text-anchor="middle">43.8%</text>
+  <text x="110" y="172.25" font-size="13" fill="#2a2a2a" text-anchor="middle">19.8%</text>
+  <text x="110" y="81.8" font-size="13" fill="#2a2a2a" text-anchor="middle">36.4%</text>
+  <text x="110" y="356" font-size="14" fill="var(--fg)" text-anchor="middle">負債・純資産　127,567</text>
+</svg>
+<div style="font-size: 0.85em; color: var(--fg-muted); margin-top: 0.6em;">
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#3a362c;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>純資産　55,865（43.8%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>固定負債　25,234（19.8%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1px, transparent 1px 6px), repeating-linear-gradient(135deg, #3a362c 0 1px, transparent 1px 6px);background-color:#f5f2ea;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>流動負債　46,468（36.4%）</div>
+</div>
+</div>
 </div>
 
 マネーフォワードは潤沢な現金を持ち、資産の多くをソフトウェアやのれんといった無形資産が占めています。そして、その原資の多くは株主からの出資（純資産）です。
@@ -170,38 +190,58 @@ B/S の右側は、資産を構築するための資金の出所（誰のお金�
 
 この構成を縦型の積み上げグラフにすると、預り金の大きさが視覚的にも際立ちます。
 
-<svg viewBox="0 0 340 335" role="img" aria-labelledby="bs2-title bs2-desc" style="width:100%; max-width:420px; height:auto; display:block; margin: 1.2em auto 0.4em;">
-  <title id="bs2-title">メルカリ連結財政状態計算書の構成（2025年6月期、百万円、縦型積み上げ）</title>
-  <desc id="bs2-desc">資産の内訳（現金及び現金同等物、営業債権及びその他の債権、その他資産）と、負債・純資産の内訳（資本合計、その他負債、預り金）を、それぞれ合計543,763百万円の縦型積み上げ棒グラフで示す。色ではなく模様で区別しており、白黒印刷でも判別できる。両者の合計は一致する。</desc>
+<div style="display:flex; flex-wrap:wrap; gap: 1.6em; margin: 1.2em 0 1.6em;">
+<div style="flex:1 1 220px; min-width:200px;">
+<svg viewBox="0 0 220 360" role="img" aria-labelledby="bs2a-title bs2a-desc" style="width:100%; max-width:260px; height:auto; display:block; margin: 0 auto;">
+  <title id="bs2a-title">メルカリ：資産の構成（2025年6月期、百万円）</title>
+  <desc id="bs2a-desc">現金及び現金同等物27.0%、営業債権及びその他の債権46.9%、その他資産26.1%からなる、合計543,763百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
   <defs>
-    <pattern id="bs2-h45s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,8 L8,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
-    <pattern id="bs2-h135s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,0 L8,8" stroke="#3a362c" stroke-width="1.2" /></pattern>
-    <pattern id="bs2-h135d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,0 L4,4" stroke="#3a362c" stroke-width="1.2" /></pattern>
-    <clipPath id="bs2-col1"><path d="M40,300 V24 A4,4 0 0 1 44,20 H136 A4,4 0 0 1 140,24 V300 Z" /></clipPath>
-    <clipPath id="bs2-col2"><path d="M200,300 V24 A4,4 0 0 1 204,20 H296 A4,4 0 0 1 300,24 V300 Z" /></clipPath>
+    <pattern id="bs2a-h45s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,8 L8,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <clipPath id="bs2a-col"><path d="M40,340 V24 A4,4 0 0 1 44,20 H176 A4,4 0 0 1 180,24 V340 Z" /></clipPath>
   </defs>
-  <line x1="20" y1="300" x2="320" y2="300" stroke="#3a362c" stroke-width="1" />
-  <g clip-path="url(#bs2-col1)">
-    <rect x="40" y="225.3" width="100" height="74.7" fill="#e4e0d4" />
-    <rect x="40" y="94.1" width="100" height="129.2" fill="#a8a394" />
-    <rect x="40" y="20" width="100" height="72.1" fill="url(#bs2-h45s)" />
+  <line x1="20" y1="340" x2="200" y2="340" stroke="#3a362c" stroke-width="1" />
+  <g clip-path="url(#bs2a-col)">
+    <rect x="40" y="254.5" width="140" height="85.5" fill="#e4e0d4" />
+    <rect x="40" y="104.6" width="140" height="147.9" fill="#a8a394" />
+    <rect x="40" y="20" width="140" height="82.6" fill="url(#bs2a-h45s)" />
   </g>
-  <g clip-path="url(#bs2-col2)">
-    <rect x="200" y="249.7" width="100" height="50.3" fill="url(#bs2-h135s)" />
-    <rect x="200" y="132.9" width="100" height="114.8" fill="url(#bs2-h135d)" />
-    <rect x="200" y="20" width="100" height="110.9" fill="#3a362c" />
-  </g>
-  <text x="90" y="316" font-size="14" fill="var(--fg)" text-anchor="middle">資産　543,763</text>
-  <text x="250" y="316" font-size="14" fill="var(--fg)" text-anchor="middle">負債・純資産　543,763</text>
+  <text x="110" y="300.75" font-size="13" fill="#2a2a2a" text-anchor="middle">27.0%</text>
+  <text x="110" y="182.05" font-size="13" fill="#2a2a2a" text-anchor="middle">46.9%</text>
+  <text x="110" y="64.8" font-size="13" fill="#2a2a2a" text-anchor="middle">26.1%</text>
+  <text x="110" y="356" font-size="14" fill="var(--fg)" text-anchor="middle">資産　543,763</text>
 </svg>
-
-<div style="display:flex; flex-wrap:wrap; gap: 0.4em 1.4em; font-size: 0.85em; color: var(--fg-muted); margin: 0 0 1.6em;">
-  <span><span style="display:inline-block;width:14px;height:14px;background:#e4e0d4;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>現金及び現金同等物 147,028</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background:#a8a394;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>営業債権及びその他の債権 254,728</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>その他資産 142,007</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>資本合計 99,640</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>その他負債 226,854</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background:#3a362c;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-2px;"></span>預り金 217,268</span>
+<div style="font-size: 0.85em; color: var(--fg-muted); margin-top: 0.6em;">
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#e4e0d4;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>現金及び現金同等物　147,028（27.0%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#a8a394;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>営業債権及びその他の債権　254,728（46.9%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(45deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>その他資産　142,007（26.1%）</div>
+</div>
+</div>
+<div style="flex:1 1 220px; min-width:200px;">
+<svg viewBox="0 0 220 360" role="img" aria-labelledby="bs2l-title bs2l-desc" style="width:100%; max-width:260px; height:auto; display:block; margin: 0 auto;">
+  <title id="bs2l-title">メルカリ：負債・純資産の構成（2025年6月期、百万円）</title>
+  <desc id="bs2l-desc">資本合計18.3%、その他負債41.7%、預り金40.0%からなる、合計543,763百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
+  <defs>
+    <pattern id="bs2l-h135s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,0 L8,8" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs2l-h135d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,0 L4,4" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <clipPath id="bs2l-col"><path d="M40,340 V24 A4,4 0 0 1 44,20 H176 A4,4 0 0 1 180,24 V340 Z" /></clipPath>
+  </defs>
+  <line x1="20" y1="340" x2="200" y2="340" stroke="#3a362c" stroke-width="1" />
+  <g clip-path="url(#bs2l-col)">
+    <rect x="40" y="282.4" width="140" height="57.6" fill="url(#bs2l-h135s)" />
+    <rect x="40" y="148.9" width="140" height="131.5" fill="url(#bs2l-h135d)" />
+    <rect x="40" y="20" width="140" height="126.9" fill="#3a362c" />
+  </g>
+  <text x="110" y="315.2" font-size="13" fill="#2a2a2a" text-anchor="middle">18.3%</text>
+  <text x="110" y="218.65" font-size="13" fill="#2a2a2a" text-anchor="middle">41.7%</text>
+  <text x="110" y="87.45" font-size="13" fill="#f5f2ea" text-anchor="middle">40.0%</text>
+  <text x="110" y="356" font-size="14" fill="var(--fg)" text-anchor="middle">負債・純資産　543,763</text>
+</svg>
+<div style="font-size: 0.85em; color: var(--fg-muted); margin-top: 0.6em;">
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 8px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>資本合計　99,640（18.3%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background-image:repeating-linear-gradient(135deg, #3a362c 0 1.2px, #f5f2ea 1.2px 4px);border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>その他負債　226,854（41.7%）</div>
+<div style="margin: 0.2em 0;"><span style="display:inline-block;width:12px;height:12px;background:#3a362c;border:1px solid #3a362c;margin-right:0.4em;vertical-align:-1px;"></span>預り金　217,268（40.0%）</div>
+</div>
+</div>
 </div>
 
 ### 純資産 (Equity) - 自己資本
