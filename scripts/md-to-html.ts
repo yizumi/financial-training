@@ -208,6 +208,12 @@ tbody tr:nth-child(even) { background: rgba(0, 0, 0, 0.02); }
   text-align: center;
 }
 
+.chapter + .chapter {
+  break-before: page;
+  page-break-before: always;
+}
+.chapter > h1:first-child { margin-top: 0; }
+
 @media (max-width: 640px) {
   html { font-size: 13px; }
   body { padding: 1.5rem 1rem 3rem; }
@@ -221,7 +227,7 @@ tbody tr:nth-child(even) { background: rgba(0, 0, 0, 0.02); }
 }
 `.trim();
 
-function wrapHtml(title: string, body: string): string {
+export function wrapHtml(title: string, body: string): string {
   return `<!doctype html>
 <html lang="ja">
 <head>

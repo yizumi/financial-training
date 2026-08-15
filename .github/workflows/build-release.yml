@@ -31,49 +31,11 @@ jobs:
 
       - run: npm ci
 
-      - name: Build HTML for every chapter in src/
+      - name: Build the book (all chapters → one HTML)
         run: |
           set -euo pipefail
-          npm run build:all
+          npm run build:book
           ls -la dist/
-
-      - name: Generate index.html
-        run: |
-          set -euo pipefail
-          {
-            echo '<!doctype html>'
-            echo '<html lang="ja"><head><meta charset="utf-8">'
-            echo '<meta name="viewport" content="width=device-width,initial-scale=1">'
-            echo '<title>Finance Training — Chapters</title>'
-            echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Source+Serif+4:wght@400;600&display=swap">'
-            echo '<style>'
-            echo 'html{font-size:14px}'
-            echo 'body{font-family:"Source Serif 4","Noto Serif JP",serif;max-width:680px;margin:3rem auto;padding:0 1rem;line-height:1.5;background:#fbfaf6;color:#1f1f1f}'
-            echo 'h1{border-bottom:1px solid #d8d3c4;padding-bottom:.4em;font-weight:700}'
-            echo 'ul{padding-left:1.2em;list-style:none}'
-            echo 'li{margin:.4em 0}'
-            echo 'a{color:#5a3a1f;text-decoration-thickness:1px;text-underline-offset:2px}'
-            echo 'a:hover{color:#884b1f}'
-            echo '.meta{color:#777;font-size:.9em;margin-top:2.5em;border-top:1px solid #e6e1d2;padding-top:.8em}'
-            echo '</style>'
-            echo '</head><body>'
-            echo '<h1>Finance Training</h1>'
-            echo '<ul>'
-            for f in $(ls dist/*.html | sort); do
-              base=$(basename "$f")
-              [ "$base" = "index.html" ] && continue
-              title=$(grep -m1 -oP '(?<=<title>).*?(?=</title>)' "$f" || echo "$base")
-              echo "<li><a href=\"${base}\">${title}</a></li>"
-            done
-            echo '</ul>'
-            echo "<p class=\"meta\">Built from <code>${GITHUB_SHA}</code> · run #${GITHUB_RUN_NUMBER}</p>"
-            echo '</body></html>'
-          } > dist/index.html
-
-      - name: Package zip
-        run: |
-          cd dist
-          zip -r ../finance-html.zip .
 
       - name: Compute release metadata
         id: meta
@@ -89,11 +51,9 @@ jobs:
           tag_name: ${{ steps.meta.outputs.tag }}
           name: ${{ steps.meta.outputs.name }}
           body: |
-            Rendered HTML from `${{ github.sha }}`.
+            Single-file HTML book rendered from `${{ github.sha }}`.
 
-            - Per-chapter HTML files attached individually
-            - `finance-html.zip` contains all chapters plus an index page
+            Open `book.html` in a browser to read; all chapters are in one document with page breaks between them for printing.
           files: |
-            dist/*.html
-            finance-html.zip
+            dist/book.html
           generate_release_notes: true
