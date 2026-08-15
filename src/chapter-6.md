@@ -195,25 +195,30 @@ B/S の右側は、資産を構築するための資金の出所（誰のお金�
 <div style="display:flex; flex-wrap:wrap; gap: 0.6em; margin: 1.2em 0 1.6em; break-inside: avoid; page-break-inside: avoid;">
 <div style="flex: 0 1 280px; min-width:220px;">
 <svg viewBox="0 0 260 380" role="img" aria-labelledby="bs2a-title bs2a-desc" style="width:100%; max-width:280px; height:auto; display:block; margin: 0 auto;">
-  <title id="bs2a-title">メルカリ：資産の構成（2025年6月期、百万円）</title>
-  <desc id="bs2a-desc">現金及び現金同等物27.0%、営業債権及びその他の債権46.9%、その他資産26.1%からなる、合計543,763百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
+  <title id="bs2a-title">メルカリ：資産の構成（2025年6月期、百万円、連結財政状態計算書の記載順）</title>
+  <desc id="bs2a-desc">連結財政状態計算書の記載順（流動資産→非流動資産）で、現金及び現金同等物27.0%、営業債権及びその他の債権46.9%、差入保証金12.4%、その他の金融資産（非流動）6.5%、その他資産7.2%からなる、合計543,763百万円の積み上げ棒グラフ。色ではなく模様で区別しており、白黒印刷でも判別できる。</desc>
   <defs>
     <pattern id="bs2a-h45s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,8 L8,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
     <pattern id="bs2a-h135s" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="#f5f2ea" /><path d="M0,0 L8,8" stroke="#3a362c" stroke-width="1.2" /></pattern>
+    <pattern id="bs2a-h45d" patternUnits="userSpaceOnUse" width="4" height="4"><rect width="4" height="4" fill="#f5f2ea" /><path d="M0,4 L4,0" stroke="#3a362c" stroke-width="1.2" /></pattern>
     <clipPath id="bs2a-col"><path d="M40,340 V24 A4,4 0 0 1 44,20 H176 A4,4 0 0 1 180,24 V340 Z" /></clipPath>
   </defs>
   <line x1="20" y1="340" x2="200" y2="340" stroke="#3a362c" stroke-width="1" />
   <g clip-path="url(#bs2a-col)">
-    <rect x="40" y="20" width="140" height="85.5" fill="#e4e0d4" />
-    <rect x="40" y="107.5" width="140" height="147.9" fill="url(#bs2a-h45s)" />
-    <rect x="40" y="257.4" width="140" height="82.6" fill="url(#bs2a-h135s)" />
+    <rect x="40" y="20" width="140" height="84.36" fill="#e4e0d4" />
+    <rect x="40" y="106.36" width="140" height="146.16" fill="url(#bs2a-h45s)" />
+    <rect x="40" y="254.52" width="140" height="38.63" fill="url(#bs2a-h45d)" />
+    <rect x="40" y="295.15" width="140" height="20.43" fill="#a8a394" />
+    <rect x="40" y="317.58" width="140" height="22.42" fill="url(#bs2a-h135s)" />
   </g>
   <text x="110" y="56" font-size="12" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#e4e0d4" stroke-width="3" stroke-linejoin="round">現金及び現金同等物</text>
   <text x="110" y="71" font-size="10.5" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#e4e0d4" stroke-width="3" stroke-linejoin="round">147,028（27.0%）</text>
-  <text x="110" y="175" font-size="11" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#f5f2ea" stroke-width="3" stroke-linejoin="round">営業債権及びその他の債権</text>
-  <text x="110" y="190" font-size="10.5" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#f5f2ea" stroke-width="3" stroke-linejoin="round">254,728（46.9%）</text>
-  <text x="110" y="292" font-size="12" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#f5f2ea" stroke-width="3" stroke-linejoin="round">その他資産</text>
-  <text x="110" y="307" font-size="10.5" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#f5f2ea" stroke-width="3" stroke-linejoin="round">142,007（26.1%）</text>
+  <text x="110" y="173" font-size="11" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#f5f2ea" stroke-width="3" stroke-linejoin="round">営業債権及びその他の債権</text>
+  <text x="110" y="188" font-size="10.5" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#f5f2ea" stroke-width="3" stroke-linejoin="round">254,728（46.9%）</text>
+  <text x="110" y="267" font-size="12" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#f5f2ea" stroke-width="3" stroke-linejoin="round">差入保証金</text>
+  <text x="110" y="282" font-size="10.5" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#f5f2ea" stroke-width="3" stroke-linejoin="round">67,328（12.4%）</text>
+  <text x="110" y="309" font-size="9.5" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#a8a394" stroke-width="3" stroke-linejoin="round">その他金融資産　6.5%</text>
+  <text x="110" y="332" font-size="10" fill="#2a2a2a" text-anchor="middle" paint-order="stroke fill" stroke="#f5f2ea" stroke-width="3" stroke-linejoin="round">その他資産　7.2%</text>
   <text x="110" y="356" font-size="14" fill="var(--fg)" text-anchor="middle">資産　543,763</text>
 </svg>
 </div>
