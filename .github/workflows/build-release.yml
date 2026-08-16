@@ -30,6 +30,14 @@ jobs:
           cache: "npm"
 
       - run: npm ci
+        env:
+          # The runner image ships with Google Chrome; no need to download Chromium.
+          PUPPETEER_SKIP_DOWNLOAD: "1"
+
+      - name: Install Japanese fonts (fallback for PDF rendering)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q fonts-noto-cjk
 
       - name: Build HTML for every chapter in src/
         run: |
@@ -75,6 +83,12 @@ jobs:
           cd dist
           zip -r ../finance-html.zip .
 
+      - name: Build combined PDF
+        run: |
+          set -euo pipefail
+          PUPPETEER_EXECUTABLE_PATH="$(which google-chrome)" npm run build:pdf
+          ls -la dist/financial-training.pdf
+
       - name: Compute release metadata
         id: meta
         run: |
@@ -89,11 +103,13 @@ jobs:
           tag_name: ${{ steps.meta.outputs.tag }}
           name: ${{ steps.meta.outputs.name }}
           body: |
-            Rendered HTML from `${{ github.sha }}`.
+            Rendered HTML and PDF from `${{ github.sha }}`.
 
+            - `financial-training.pdf` — all chapters combined into a single PDF
             - Per-chapter HTML files attached individually
             - `finance-html.zip` contains all chapters plus an index page
           files: |
+            dist/financial-training.pdf
             dist/*.html
             finance-html.zip
           generate_release_notes: true
