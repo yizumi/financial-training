@@ -9,6 +9,12 @@ import katex from "katex";
 const KATEX_VERSION = "0.16.11";
 const MERMAID_VERSION = "10";
 
+export interface NavItem {
+  href: string;
+  title: string;
+  indented?: boolean;
+}
+
 function buildMarkdown(): MarkdownIt {
   const md = new MarkdownIt({
     html: true,
@@ -56,7 +62,11 @@ function extractTitle(markdown: string, fallback: string): string {
   return match ? match[1].trim() : fallback;
 }
 
-function escapeHtml(s: string): string {
+function shortTitle(title: string): string {
+  return title.replace(/\s*\|.*$/, "").trim();
+}
+
+export function escapeHtml(s: string): string {
   return s
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
@@ -74,6 +84,7 @@ const css = `
   --quote-bg: #f3efe2;
   --code-bg: #efeadb;
   --table-head-bg: #ede7d4;
+  --sidebar-width: 210px;
   --max-width: 760px;
 }
 
@@ -85,7 +96,7 @@ html { -webkit-text-size-adjust: 100%; font-size: 14px; }
 
 body {
   margin: 0;
-  padding: 3rem 1.25rem 5rem;
+  padding: 0;
   background: var(--bg);
   color: var(--fg);
   font-family: "Source Serif 4", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
@@ -95,10 +106,75 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-main {
-  max-width: var(--max-width);
+/* ── Layout ── */
+
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: calc(var(--sidebar-width) + var(--max-width) + 5rem);
   margin: 0 auto;
+  padding: 3rem 1.25rem 5rem;
 }
+
+main {
+  flex: 1;
+  min-width: 0;
+  max-width: var(--max-width);
+}
+
+/* ── Sidebar ── */
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  border-right: 1px solid var(--rule);
+}
+
+.sidebar-home {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--fg-muted);
+  text-decoration: none;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+.sidebar-home:hover { color: var(--accent); }
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-nav li { margin: 0; }
+.sidebar-nav a {
+  display: block;
+  padding: 0.3em 0.5em;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--fg-muted);
+  text-decoration: none;
+  border-radius: 3px;
+}
+.sidebar-nav a:hover { color: var(--accent); background: var(--quote-bg); }
+.sidebar-nav a.active {
+  color: var(--accent);
+  font-weight: 600;
+  background: var(--quote-bg);
+}
+.sidebar-nav a.indented {
+  padding-left: 1.4em;
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
+/* ── Typography ── */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Serif 4", "Noto Serif JP", serif;
@@ -222,20 +298,60 @@ tbody tr:nth-child(even) { background: rgba(0, 0, 0, 0.02); }
   text-align: center;
 }
 
-@media (max-width: 640px) {
-  html { font-size: 13px; }
-  body { padding: 1.5rem 1rem 3rem; }
+@media (max-width: 768px) {
+  .page-layout { flex-direction: column; gap: 1.5rem; padding: 1.5rem 1rem 3rem; }
+  .sidebar {
+    width: 100%;
+    position: static;
+    max-height: none;
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1rem;
+  }
+  .sidebar-nav { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+  .sidebar-nav a { padding: 0.2em 0.5em; }
   h1 { font-size: 1.7rem; }
   h2 { font-size: 1.35rem; }
 }
 
 @media print {
+  .sidebar { display: none; }
   body { background: #fff; padding: 0; }
   blockquote, code, pre, thead th { background: #f4f1e8 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 `.trim();
 
-function wrapHtml(title: string, body: string): string {
+export const KATEX_CSS_URL = `https://cdn.jsdelivr.net/npm/katex@${KATEX_VERSION}/dist/katex.min.css`;
+
+export { css };
+
+function buildSidebar(nav: NavItem[], currentHref: string): string {
+  const items = nav
+    .map(({ href, title, indented }) => {
+      const classes = [indented ? "indented" : "", href === currentHref ? "active" : ""].filter(Boolean).join(" ");
+      const classAttr = classes ? ` class="${classes}"` : "";
+      return `      <li><a href="${escapeHtml(href)}"${classAttr}>${escapeHtml(shortTitle(title))}</a></li>`;
+    })
+    .join("\n");
+  return `  <aside class="sidebar">
+    <a class="sidebar-home" href="index.html">← 目次に戻る</a>
+    <nav aria-label="章一覧">
+      <ul class="sidebar-nav">
+${items}
+      </ul>
+    </nav>
+  </aside>`;
+}
+
+export function wrapHtml(title: string, body: string, nav?: NavItem[], currentHref?: string): string {
+  const hasSidebar = nav && nav.length > 0;
+  const sidebarHtml = hasSidebar ? buildSidebar(nav!, currentHref ?? "") : "";
+
+  const innerHtml = hasSidebar
+    ? `<div class="page-layout">\n${sidebarHtml}\n  <main>\n${body}  </main>\n</div>`
+    : `<div class="page-layout">\n  <main>\n${body}  </main>\n</div>`;
+
   return `<!doctype html>
 <html lang="ja">
 <head>
@@ -251,9 +367,7 @@ ${css}
 </style>
 </head>
 <body>
-<main>
-${body}
-</main>
+${innerHtml}
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@${MERMAID_VERSION}/dist/mermaid.esm.min.mjs";
   mermaid.initialize({ startOnLoad: true, theme: "default", securityLevel: "loose" });
@@ -263,12 +377,13 @@ ${body}
 `;
 }
 
-export function convert(inputPath: string, outputPath: string, md?: MarkdownIt): void {
+export function convert(inputPath: string, outputPath: string, md?: MarkdownIt, nav?: NavItem[]): void {
   const markdown = readFileSync(inputPath, "utf8");
   const renderer = md ?? buildMarkdown();
   const body = renderer.render(markdown);
   const title = extractTitle(markdown, basename(inputPath, ".md"));
-  const html = wrapHtml(title, body);
+  const currentHref = basename(outputPath);
+  const html = wrapHtml(title, body, nav, currentHref);
 
   mkdirSync(dirname(outputPath), { recursive: true });
   writeFileSync(outputPath, html, "utf8");
